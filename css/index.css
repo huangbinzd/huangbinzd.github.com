@@ -34,8 +34,8 @@
 .pic2{
 	display: none;
 	position: relative;
-	width: 300px;
-	margin:0px auto;
+	width: 100%;
+	text-align: center;
 }
 
 .pic2 img{
