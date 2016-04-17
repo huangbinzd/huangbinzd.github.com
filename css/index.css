@@ -5,37 +5,11 @@
 	position: relative;
 }
 
-.pic .row-2{
-	margin-top: 180px;
-}
-
-.pic .row-3{
-	margin-top: 180px;
-}
-
-.pic .row div{
-	border:1px solid #dcdcdc;
-}
-
-.pic .row-col-2{
-	margin-left: 202px;
-}
-
-.pic .row-col-3{
-	margin-left: 404px;
-}
-
-.pic .row img{
-	width: 200px;
-	height: 180px;
-	border:1px solid #dcdcdc;
-}
-
 .pic2{
 	display: none;
 	position: relative;
-	width: 100%;
-	text-align: center;
+    width: 300px;
+    margin: 0px auto;
 }
 
 .pic2 img{
