@@ -18,11 +18,12 @@
         // offsetX = (window.innerWidth-750)/2;
         // offsetY = (window.innerHeight-540)/2;
         // offsetX2 = (window.innerWidth-300)/2;
-        // pic = document.getElementById('container');
+        pic = document.getElementById('container');
+        offsetY2 = (window.innerHeight-pic.offsetHeight)/2;
         // offsetX = (window.innerWidth-pic.offsetWidth)/2;
         // pic2 = document.getElementById('pic2');
         // pic.style.left = offsetX+'px';
-        // pic.style.top  = offsetY+'px';
+        pic.style.top  = offsetY2+'px';
         //pic2.style.left = offsetX2+'px'; 
     }
 
@@ -36,11 +37,7 @@
 
             textStage.canvas.width = 600;
 
-
-
             stage.canvas.width = window.innerWidth;
-
-
 
             $('body').width(window.innerWidth);
         };
