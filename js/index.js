@@ -36,7 +36,7 @@
         $('body').width(window.innerWidth);
         stage.canvas.width = window.innerWidth;
         textStage.canvas.height = 200;
-        textStage.canvas.width = 600;
+        textStage.canvas.width = window.innerWidth;
         stage.canvas.height = window.innerHeight;
     }
 
