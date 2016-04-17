@@ -40,7 +40,9 @@
             stage.canvas.width = window.innerWidth;
 
             $('body').width(window.innerWidth);
-        };
+        }else{
+            stage.canvas.width = window.innerWidth;
+        }
         textStage.canvas.height = 200;
         stage.canvas.height = window.innerHeight;
     }
