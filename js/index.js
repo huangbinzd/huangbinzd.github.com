@@ -31,18 +31,8 @@
     function initStages() {
         textStage = new createjs.Stage("text");
         stage = new createjs.Stage("stage");
-        if (browserRedirect() == 'pc') {
-            offsetX = (window.innerWidth-600)/2;
-            offsetY = (window.innerHeight-300)/2;
-
-            textStage.canvas.width = 600;
-
-            stage.canvas.width = window.innerWidth;
-
-            $('body').width(window.innerWidth);
-        }else{
-            stage.canvas.width = window.innerWidth;
-        }
+        $('body').width(window.innerWidth);
+        stage.canvas.width = window.innerWidth;
         textStage.canvas.height = 200;
         stage.canvas.height = window.innerHeight;
     }
