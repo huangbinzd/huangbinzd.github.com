@@ -84,7 +84,7 @@
 			</div>
 			<div class="col-xs-4 col-md-4">
 				<a href="javascript:void(0)" class="thumbnail" onclick="showName()">
-					<img src="img/5.jpg" alt="...">
+					<div class="click-div" style="height:168px">点我就知道真相！！！！！</div>
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
@@ -129,6 +129,7 @@
 		setTimeout("showTip('............')", 5000);
 		setTimeout("showTip('这不是我,我其实是这个样子的')", 10000);
 		setTimeout("showname()", 15000);
+		setTimeout("showname()", 19000);
 	}
 
 	function showTip(msg){
@@ -141,6 +142,7 @@
 	function showname(){
 		document.getElementById('submit').click();
 		document.getElementById('pic2').style.display = 'none';
+		document.getElementById('inputText').value = '';
 	}
 </script>
 </html>
