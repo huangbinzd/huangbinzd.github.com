@@ -15,15 +15,15 @@
     }
 
     function initPic(){
-        offsetX = (window.innerWidth-750)/2;
-        offsetY = (window.innerHeight-540)/2;
-        offsetX2 = (window.innerWidth-300)/2;
-        pic = document.getElementById('container');
-        offsetX = (window.innerWidth-pic.offsetWidth)/2;
-        pic2 = document.getElementById('pic2');
-        pic.style.left = offsetX+'px';
-        pic.style.top  = offsetY+'px';
-        pic2.style.left = offsetX2+'px'; 
+        // offsetX = (window.innerWidth-750)/2;
+        // offsetY = (window.innerHeight-540)/2;
+        // offsetX2 = (window.innerWidth-300)/2;
+        // pic = document.getElementById('container');
+        // offsetX = (window.innerWidth-pic.offsetWidth)/2;
+        // pic2 = document.getElementById('pic2');
+        // pic.style.left = offsetX+'px';
+        // pic.style.top  = offsetY+'px';
+        //pic2.style.left = offsetX2+'px'; 
     }
 
     // Init Canvas
@@ -37,6 +37,8 @@
         stage = new createjs.Stage("stage");
         stage.canvas.width = window.innerWidth;
         stage.canvas.height = window.innerHeight;
+
+        $('body').width(window.innerWidth);
     }
 
     function initForm() {
