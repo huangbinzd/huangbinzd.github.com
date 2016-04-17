@@ -29,11 +29,14 @@
 
     // Init Canvas
     function initStages() {
+        offsetX = (window.innerWidth-600)/2;
+        offsetY = (window.innerHeight-300)/2;
         textStage = new createjs.Stage("text");
         stage = new createjs.Stage("stage");
         $('body').width(window.innerWidth);
         stage.canvas.width = window.innerWidth;
         textStage.canvas.height = 200;
+        textStage.canvas.width = 600;
         stage.canvas.height = window.innerHeight;
     }
 
