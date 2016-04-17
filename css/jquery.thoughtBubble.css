@@ -50,7 +50,8 @@
 	position: relative;
 	margin: 80px 10px 10px 150px;
 
-	line-height: 60px;
+	padding-top: 10px;
+    padding-left: 10px;
 }
 
 .main-bubble:after, .main-bubble:before {

@@ -85,7 +85,11 @@ $.fn.thoughtBubble = function( defaults ) {
 
         setTimeout(animate, 1000);
 
+        setTimeout(unanimate, 4000);
+
         $(window).on('resize', shiftDiv.bind(this, $this) );
+
+        $this.prev().remove();
 
         return $this.parent().prepend(container);
 

@@ -33,6 +33,9 @@
 
 .pic2{
 	display: none;
+	position: relative;
+	width: 300px;
+	margin:0px auto;
 }
 
 .pic2 img{
