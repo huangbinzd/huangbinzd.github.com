@@ -8,5 +8,9 @@
 }
 
 .container {
-	margin-top: 40px;
+	position: relative;
+}
+
+.container *{
+	position: relative;
 }
