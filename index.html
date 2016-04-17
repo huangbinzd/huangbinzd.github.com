@@ -127,6 +127,8 @@
 		//document.getElementById('submit').click();
 		showTip('我是Miss唐,楚芝。大爷,我美不。');
 		setTimeout("showTip('............')", 5000);
+		setTimeout("showTip('这不是我,我其实是这个样子的')", 10000);
+		setTimeout("showname()", 15000);
 	}
 
 	function showTip(msg){
@@ -136,5 +138,9 @@
 		});		
 	}
 
+	function showname(){
+		document.getElementById('submit').click();
+		document.getElementById('pic2').style.display = 'none';
+	}
 </script>
 </html>
