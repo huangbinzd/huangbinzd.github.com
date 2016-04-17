@@ -25,6 +25,10 @@
         // pic.style.left = offsetX+'px';
         pic.style.top  = offsetY2+'px';
         //pic2.style.left = offsetX2+'px'; 
+        pic_6 = document.getElementById('pic_6');
+        $('#click-div').height(pic_6.offsetHeight);
+        var mar_top =  (pic_6.offsetHeight - $('.div-content').height())/2;
+        $('.click-div').css('padding-top',mar_top + 'px');
     }
 
     // Init Canvas
@@ -38,6 +42,9 @@
         textStage.canvas.height = 200;
         textStage.canvas.width = window.innerWidth;
         stage.canvas.height = window.innerHeight;
+        if (window.innerWidth < 600) {
+            textStage.canvas.width = 600;
+        }
     }
 
     function initForm() {
