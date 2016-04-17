@@ -57,6 +57,9 @@
 	<div id="pic2" class="pic2">
 		<img src="img/pig.jpg" id="thoughtBubble">
 	</div>
+	<div id="pic3" class="pic3">
+		<img src="img/girl.jpg" id="thoughtBubble">
+	</div>
 	<div class="container" id="container">
 		<div id="pic">
 		<div class="row">
@@ -84,7 +87,10 @@
 			</div>
 			<div class="col-xs-4 col-md-4">
 				<a href="javascript:void(0)" class="thumbnail" onclick="showName()">
-					<div class="click-div" style="height:168px">点我就知道真相！！！！！</div>
+					<div class="click-div" style="height:168px;text-align:center;padding:50px 0px">
+					<p>唐楚芝</p>
+					<p>点我有图看！！！！！</p>
+					</div>
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
@@ -125,11 +131,13 @@
 		document.getElementById('pic').style.display = 'none';
 		document.getElementById('pic2').style.display = 'block';
 		//document.getElementById('submit').click();
-		showTip('我是Miss唐,楚芝。大爷,我美不。');
+		showTip('我是唐楚芝。大爷,我美不。');
 		setTimeout("showTip('............')", 5000);
-		setTimeout("showTip('这不是我,我其实是这个样子的')", 10000);
+		setTimeout("showTip('这不是我,我其实是这个样子的,变身吧!')", 10000);
 		setTimeout("showname()", 15000);
-		setTimeout("showname()", 19000);
+		setTimeout("showname()", 18000);
+		setTimeout("showpic()", 18000);
+		setTimeout("reload()", 22000);
 	}
 
 	function showTip(msg){
@@ -143,6 +151,14 @@
 		document.getElementById('submit').click();
 		document.getElementById('pic2').style.display = 'none';
 		document.getElementById('inputText').value = '';
+	}
+
+	function showpic(){
+		document.getElementById('pic3').style.display = 'block';
+	}
+
+	function reload(){
+		window.location.reload();
 	}
 </script>
 </html>
